@@ -1,0 +1,23 @@
+class Solution {
+public:
+    int reverse(int x) {        
+        long ans=0;
+        while(x)
+        {
+            long p = x%10;
+            ans = ans*10+p;
+            x=x/10;
+            // p:3 ans:3 x:12
+            // p:2 ans:32 x:1;   
+            // p:1 ans:321 x:0;
+        }
+        
+        if(ans<INT_MIN || ans>INT_MAX){
+            return 0;
+        }
+        
+        int r=(int)ans;
+        return r;
+        
+    }
+};
