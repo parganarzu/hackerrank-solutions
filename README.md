@@ -1,1 +1,1 @@
-# hackerrank-solutions
+# hackerrank-codility-leetcode-solutions
